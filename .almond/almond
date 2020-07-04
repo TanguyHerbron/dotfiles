@@ -1,0 +1,81 @@
+#!/bin/bash
+
+env_path="$HOME/.almond/almond_env"
+. $env_path > /dev/null 2>&1
+
+print_help() {
+    echo "Help" 
+}
+
+install() {
+    self="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
+    mkdir -p $HOME/.almond/
+    cp ./$self $HOME/.almond/almond
+
+    setup_env
+}
+
+setup_env() {
+    read -p "Enter the path to Cellari's projects: " -i "~" -e root_path
+    read -p "Enter the path to almond_django: " -i "$root_path" -e django_path
+    read -p "Enter the path to almond_frontend: " -i "$root_path" -e front_path
+    read -p "Enter the name of your conda environment: " -e conda_env
+
+    rm -f $env_path
+    touch $env_path
+    echo "export ALMOND_ROOT='$root_path'" >> $env_path 
+    echo "export ALMOND_DJANGO='$django_path'" >> $env_path
+    echo "export ALMOND_FRONT='$front_path'" >> $env_path
+    echo "export ALMOND_ENV='$conda_env'" >> $env_path
+
+    . $env_path
+}
+
+while getopts ":his" option; do
+    case $option in
+        h)
+            print_help
+            exit;;
+        i)
+            install
+            exit;;
+        s)
+            setup_env
+            exit;;
+        \?)
+            echo "Error: Invalid option"
+            exit;;
+    esac
+done
+
+if [ -z ${ALMOND_DJANGO+x} ] || [ -z ${ALMOND_ENV+x} ] || [ -z ${ALMOND_FRONT+x} ] || [ -z ${ALMOND_ROOT+x} ]; then 
+    setup_env
+    exit
+fi
+
+case $1 in
+    shell)
+        cd "$ALMOND_DJANGO"
+        conda activate "$ALMOND_ENV"
+        python manage.py shell_plus --plain
+        ;;
+    front)
+        cd "$ALMOND_FRONT"
+        ;;
+    django)
+        cd "$ALMOND_DJANGO"
+        ;;
+    env)
+        cd $ALMOND_DJANGO
+        conda activate $ALMOND_ENV
+        ;;
+    explorer)
+        xdg-open $ALMOND_ROOT > /dev/null 2>&1
+        ;;
+    help)
+        print_help
+        ;;
+    *)
+        if [ $1 ]; then echo "Command unknown, type 'almond help' for more"; fi
+        ;;
+esac

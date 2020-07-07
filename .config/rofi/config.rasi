@@ -8,4 +8,4 @@ configuration {
 	drun-match-fields: "name,generic,exec,categories";
 }
 	
-@import "/usr/share/rofi/themes/blurry.rasi"
+@import "/home/tanguy/.local/share/rofi/themes/slate.rasi"

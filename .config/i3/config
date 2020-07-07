@@ -88,7 +88,7 @@ set_from_resource $ws10_key i3-wm.workspace.10.key 0
 ###############################################################################
 
 ## Launch // Terminal // <> Enter ##
-bindsym $mod+Return exec /usr/bin/x-terminal-emulator
+bindsym $mod+Return exec /usr/bin/konsole
 
 ## Launch // Browser // <><Shift> Enter ##
 bindsym $mod+Shift+Return exec gtk-launch $(xdg-settings get default-web-browser)
@@ -568,3 +568,5 @@ exec --no-startup-id $i3-wm.program.3
 
 # Start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
+exec_always --no-startup-id feh --bg-scale ~/Images/skyscape-4.jpg
+exec_always --no-startup-id picom --experimental-backends

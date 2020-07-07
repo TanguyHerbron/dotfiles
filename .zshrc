@@ -100,14 +100,14 @@ export LANG=en_US.UTF-8
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/tanguy/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/tanguy/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/tanguy/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
     else
-        export PATH="/home/tanguy/miniconda3/bin:$PATH"
+        export PATH="/usr/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -136,3 +136,6 @@ set -o vi
 # Dotfiles alias for easy dotfile management
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
+
+# Add libvips environment variable for pyvips
+export LD_LIBRARY_PATH=/usr/local/lib/

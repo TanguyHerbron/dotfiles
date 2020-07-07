@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-config_file = 
-echo "test"
+## Add this to your wm startup file.
 
 # Terminate already running bar instances
 killall -q polybar
@@ -9,6 +8,14 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Launch polybar
-polybar -rq top_bar -c $HOME/.config/polybar/test1 &
-polybar -rq bottom_bar -c $HOME/.config/polybar/test1 &
+# List monitors to load the bars on every one of them
+if type "xrandr"; then
+    for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+        MONITOR=$m polybar top -c ~/.config/polybar/config-top.ini &
+        MONITOR=$m polybar bottom -c ~/.config/polybar/config-bottom.ini &
+    done
+else
+    # Launch bar1 and bar2
+    polybar top -c ~/.config/polybar/config-top.ini &
+    polybar bottom -c ~/.config/polybar/config-bottom.ini &
+fi

@@ -342,9 +342,9 @@ bindsym $mod+w exec $i3-wm.program.wifi
 set_from_resource $i3-wm.program.bluetooth i3-wm.program.bluetooth gnome-control-center --class=floating_window bluetooth
 bindsym $mod+b exec $i3-wm.program.bluetooth
 
-## Launch // File Browser // <><Shift> n ##
-set_from_resource $i3-wm.program.files i3-wm.program.files /usr/bin/nautilus --new-window
-bindsym $mod+Shift+n exec $i3-wm.program.files
+## Launch // File Browser // <> e ##
+set_from_resource $i3-wm.program.files i3-wm.program.files /usr/bin/pcmanfm
+bindsym $mod+e exec $i3-wm.program.files
 
 ## Launch // Notification Viewer // <> n ##
 set_from_resource $i3-wm.program.notification_ui i3-wm.program.notification_ui /usr/bin/rofication-gui

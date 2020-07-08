@@ -149,3 +149,6 @@ export LD_LIBRARY_PATH=/usr/local/lib/
 
 # Switch between nvidia and intel drivers with one command
 alias driver='optimus-manager --no-confirm --switch'
+
+# Enable backward incremental search
+bindkey '^R' history-incremental-search-backward

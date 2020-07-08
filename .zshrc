@@ -146,3 +146,6 @@ dotfiles config --local status.showUntrackedFiles no
 
 # Add libvips environment variable for pyvips
 export LD_LIBRARY_PATH=/usr/local/lib/
+
+# Switch between nvidia and intel drivers with one command
+alias driver='optimus-manager --no-confirm --switch'

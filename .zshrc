@@ -152,3 +152,6 @@ alias driver='optimus-manager --no-confirm --switch'
 
 # Enable backward incremental search
 bindkey '^R' history-incremental-search-backward
+
+# Add an alias to the powerpill wrapper for pacman
+alias pac='sudo pacman -S'

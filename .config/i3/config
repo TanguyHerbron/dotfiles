@@ -574,3 +574,4 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id feh --bg-scale ~/Images/skyscape-4.jpg
 exec_always --no-startup-id ~/.config/picom/launch.sh &
 exec_always --no-startup-id xbindkeys --poll-rc
+exec_always --no-startup-id udiskie &

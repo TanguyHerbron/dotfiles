@@ -93,7 +93,7 @@ bindsym $mod+Return exec /usr/bin/alacritty
 ## Launch // Browser // <><Shift> Enter ##
 bindsym $mod+Shift+Return exec gtk-launch $(xdg-settings get default-web-browser)
 
-set_from_resource $rofiTheme rofi.theme /etc/regolith/styles/lascaille/rofi.rasi
+set_from_resource $rofiTheme rofi.theme ~/.config/rofi/config.rasi
 
 ## Launch // Application // <> Space ##
 set_from_resource $i3-wm.program.launcher.app i3-wm.program.launcher.app rofi -show drun -theme $rofiTheme

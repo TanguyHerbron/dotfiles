@@ -155,3 +155,6 @@ bindkey '^R' history-incremental-search-backward
 
 # Add an alias to the powerpill wrapper for pacman
 alias pac='sudo pacman -S'
+
+# When opening top, use ytop with CPU core details
+alias top="ytop -p"

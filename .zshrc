@@ -122,7 +122,7 @@ export LANG=en_US.UTF-8
 # <<< conda initialize <<<
 #
 
-alias socrates="ssh root@socrates"
+alias socrates="ssh socrates"
 alias almond_droplet="ssh tanguy@almond_droplet -p 22222"
 
 export PATH="$PATH:$HOME/.almond/"

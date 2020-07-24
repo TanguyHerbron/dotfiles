@@ -9,9 +9,11 @@ Plug 'Townk/vim-autoclose'
 Plug 'vim-syntastic/syntastic'
 Plug 'maksimr/vim-jsbeautify'
 
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Replacement for coc.vim (auto complete)
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -70,7 +72,7 @@ endif
 
 " let g:airline_powerline_fonts = 1
 
-" source ~/.config/nvim/coc.vim
+source ~/.config/nvim/coc.vim
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
 let mapleader = " "

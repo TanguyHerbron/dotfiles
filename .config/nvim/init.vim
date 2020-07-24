@@ -1,4 +1,4 @@
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
 Plug 'preservim/NERDTree'
 Plug 'majutsushi/tagbar'
 Plug 'junegunn/fzf.vim'

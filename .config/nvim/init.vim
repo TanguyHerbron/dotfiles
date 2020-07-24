@@ -8,7 +8,6 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'Townk/vim-autoclose'
 Plug 'vim-syntastic/syntastic'
 Plug 'maksimr/vim-jsbeautify'
-Plug 'storyn26383/vim-vue'
 
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Replacement for coc.vim (auto complete)
@@ -19,16 +18,21 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ryanoasis/vim-devicons'
 
+" Vue syntax highlighter
+Plug 'leafOfTree/vim-vue-plugin'
+
 " Grep utility for whole project
 Plug 'jremmen/vim-ripgrep'
 " Git integration
 Plug 'tpope/vim-fugitive'
 
+Plug 'gko/vim-coloresque'
 " Ctrl-z tree still history manager
 Plug 'mbbill/undotree'
 
 " Python auto completion engine
 Plug 'davidhalter/jedi-vim'
+
 call plug#end()
 
 " autocmd vimenter * NERDTree | wincmd w

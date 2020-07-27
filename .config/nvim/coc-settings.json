@@ -1,1 +1,5 @@
-{"suggest.noselect": false}
+{
+    "suggest.noselect": false, 
+    "vetur.format.options.tabSize": 4, 
+    "vetur.format.options.useTabs": true
+}

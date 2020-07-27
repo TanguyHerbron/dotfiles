@@ -35,6 +35,9 @@ Plug 'mbbill/undotree'
 " Python auto completion engine
 Plug 'davidhalter/jedi-vim'
 
+" Display indents
+Plug 'yggdroot/indentline'
+
 call plug#end()
 
 " autocmd vimenter * NERDTree | wincmd w
@@ -89,3 +92,12 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=99
+
+" indentline configs
+let g:indentLine_enabled = 1
+let g:indentLine_char = '|'
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '.'
+let g:indentLine_setColors = 1
+let g:indentLine_color_gui = "#5C6370"
+let g:indentLine_showFirstIndentLevel = 1

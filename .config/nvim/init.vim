@@ -5,6 +5,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
 Plug 'Shougo/neocomplete.vim'
 
+" Display indents
+Plug 'yggdroot/indentline'
+
 Plug 'Townk/vim-autoclose'
 Plug 'vim-syntastic/syntastic'
 Plug 'maksimr/vim-jsbeautify'
@@ -21,7 +24,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ryanoasis/vim-devicons'
 
 " Vue syntax highlighter
-Plug 'leafOfTree/vim-vue-plugin'
+Plug 'posva/vim-vue'
 
 " Grep utility for whole project
 Plug 'jremmen/vim-ripgrep'
@@ -34,9 +37,6 @@ Plug 'mbbill/undotree'
 
 " Python auto completion engine
 Plug 'davidhalter/jedi-vim'
-
-" Display indents
-Plug 'yggdroot/indentline'
 
 call plug#end()
 
@@ -95,9 +95,7 @@ set foldlevel=99
 
 " indentline configs
 let g:indentLine_enabled = 1
-let g:indentLine_char = '|'
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '.'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_setColors = 1
 let g:indentLine_color_gui = "#5C6370"
 let g:indentLine_showFirstIndentLevel = 1

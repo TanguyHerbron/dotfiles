@@ -1,39 +1,39 @@
 :root {
 
    /* Minimal Functional Fox variables*/
-  --mff-bg: #292f36;
-  --mff-icon-color: #e0fbfc;
+  --mff-bg: #2e3440;
+  --mff-icon-color: #ECEFF4;
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
-  --mff-sidebar-color: #e0fbfc;
+  --mff-sidebar-color: #ECEFF4;
   --mff-tab-border-radius: 0px;
-  --mff-tab-color: #fefefa;
+  --mff-tab-color: #ECEFF4;
   --mff-tab-font-family: "Cantarell", sans;
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
-  --mff-tab-pinned-bg: #70c1b3;
-  --mff-tab-selected-bg: #ee6c4d;
-  --mff-tab-soundplaying-bg: #9c89b8;
-  --mff-urlbar-color: #98c1d9;
-  --mff-urlbar-focused-color: #e0fbfc;
+  --mff-tab-pinned-bg: #A3BE8C;
+  --mff-tab-selected-bg: #BF616A;
+  --mff-tab-soundplaying-bg: #434C5E;
+  --mff-urlbar-color: #81A1C1;
+  --mff-urlbar-focused-color: #88C0D0;
   --mff-urlbar-font-family: "Cantarell", serif;
   --mff-urlbar-font-size: 12pt;
   --mff-urlbar-font-weight: 700;
-  --mff-urlbar-results-color: #e0fbfc;
+  --mff-urlbar-results-color: #88C0D0;
   --mff-urlbar-results-font-family: "mononoki Nerd Font", serif;
   --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 700;
-  --mff-urlbar-results-url-color: #98c1d9;
+  --mff-urlbar-results-url-color: #81A1C1;
   /*   --mff-tab-selected-bg: linear-gradient(90deg, rgba(232,74,95,1) 0%, rgba(255,132,124,1) 50%, rgba(254,206,168,1) 100%); */
   /*   --mff-urlbar-font-weight: 600; */
 
   /* Overriden Firefox variables*/
   --autocomplete-popup-background: var(--mff-bg) !important;
   --default-arrowpanel-background: var(--mff-bg) !important;
-  --default-arrowpanel-color: #fefefa !important;
+  --default-arrowpanel-color: #ECEFF4 !important;
   --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
-  --panel-disabled-color: #f9f9fa80;
+  --panel-disabled-color: #ECEFF480;
   --toolbar-bgcolor: var(--mff-bg) !important;
   --urlbar-separator-color: transparent !important;
 }
@@ -149,6 +149,10 @@ toolbar {
 
 #navigator-toolbox, toolbaritem {
   border: none !important;
+}
+
+#navigator-toolbox {
+    background-color: var(--mff-bg) !important;
 }
 
 #urlbar-background {

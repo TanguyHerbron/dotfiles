@@ -690,8 +690,7 @@ tree,
   transition-delay: 1s;
   filter: alpha(opacity=0);
   opacity: 0;
-  transition: visibility, ease 0.5s, margin-top, ease 0.5s, opacity, ease 0.5s,
-    rotate, ease 0.4s !important;
+  transition: visibility, ease 0.2s, margin-top, ease 0.2s, opacity, ease 0.2s !important;
 }
 
 :root:not([customizing]) :hover > #nav-bar,

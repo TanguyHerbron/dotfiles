@@ -9,7 +9,7 @@
   --mff-tab-border-radius: 0px;
   --mff-tab-color: #ECEFF4;
   --mff-tab-font-family: "Cantarell", sans;
-  --mff-tab-font-size: 11pt;
+  --mff-tab-font-size: 10pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
   --mff-tab-pinned-bg: #A3BE8C;
@@ -53,7 +53,7 @@
 #TabsToolbar .tabbrowser-tab .tab-background,
 #TabsToolbar .tabbrowser-tab .tab-content {
   margin-top: 0px;
-  height: 36px;
+  height: 24px;
   text-align: center;
 }
 
@@ -686,7 +686,7 @@ tree,
 
 #nav-bar:not([customizing]) {
   visibility: visible;
-  margin-top: -40px;
+  margin-top: -55px;
   transition-delay: 1s;
   filter: alpha(opacity=0);
   opacity: 0;

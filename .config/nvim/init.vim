@@ -92,6 +92,7 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=99
+set signcolumn=no
 
 " indentline configs
 let g:indentLine_enabled = 1

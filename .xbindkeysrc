@@ -18,6 +18,10 @@
 "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     XF86AudioMute
 
+# Pause-play running players
+"playerctl --all-players play-pause"
+    XF86AudioPlay
+
 # Increase backlight
 "xbacklight -inc 10"
     XF86MonBrightnessUp

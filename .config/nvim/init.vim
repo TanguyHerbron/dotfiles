@@ -38,6 +38,9 @@ Plug 'mbbill/undotree'
 " Python auto completion engine
 Plug 'davidhalter/jedi-vim'
 
+" LaTeX plugin
+Plug 'lervag/vimtex'
+
 call plug#end()
 
 " autocmd vimenter * NERDTree | wincmd w
@@ -111,3 +114,13 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_setColors = 1
 let g:indentLine_color_gui = "#5C6370"
 let g:indentLine_showFirstIndentLevel = 1
+
+" vimtex settings
+let g:tex_flavor = 'latex'
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_compiler_latexmk = {
+            \'build_dir': 'build',
+            \}
+
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"

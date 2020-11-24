@@ -86,6 +86,9 @@ set incsearch
 set splitright
 set splitbelow
 
+" Remove the duplicate --INSERT-- information
+set noshowmode
+
 " rg smart root founder and adds git ingore loading for faster execution
 if executable('rg')
     let g:rg_derive_root="true"

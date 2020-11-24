@@ -7,11 +7,11 @@
 
 ## Volume management
 # Increase volume
-"pactl set-sink-volume @DEFAULT_SINK@ +5%"
+"amixer set 'Master' 5%+ && amixer -c 2 set 'PCM' 5%+"
     XF86AudioRaiseVolume
 
 # Decrease volume
-"pactl set-sink-volume @DEFAULT_SINK@ -5%"
+"amixer set 'Master' 5%- && amixer -c 2 set 'PCM' 5%-"
     XF86AudioLowerVolume
 
 # Mute volume

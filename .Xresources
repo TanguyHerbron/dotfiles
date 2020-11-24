@@ -1,0 +1,58 @@
+! #include "/home/tanguy/.xcolors/ayu"
+
+! *.foreground: FOREGROUND
+! *.background: BACKGROUND
+
+! Background original
+! *.background:   [95]#1f2430
+
+*.foreground:   #D9D7CE
+*.background:   #212733
+*.cursorColor:  #ffcc66
+
+! Black
+
+*.color0:       #212733
+*.color8:       #292b30
+
+! Red
+
+*.color1:       #ff3333
+*.color9:       #ff6666
+
+! Green
+
+*.color2:       #bae67e
+*.color10:      #cee6ac
+
+! Yellow
+
+*.color3:       #ffd580
+*.color11:      #ffe6b3
+
+! Blue
+
+*.color4:       #73d0ff
+*.color12:      #a6e1ff
+
+! Magenta
+
+*.color5:       #f28779
+*.color13:      #ffd6da
+
+! Cyan
+
+*.color6:       #95e6cb
+*.color14:      #ffffff
+
+! White
+
+*.color7:       #ffffff
+*.color15:      #ffffff
+
+
+! Bold, Italic, Underline
+
+*.colorBD:     #e6e1cf
+!*.colorIT:
+!*.colorUL:

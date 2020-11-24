@@ -31,7 +31,7 @@ Plug 'jremmen/vim-ripgrep'
 " Git integration
 Plug 'tpope/vim-fugitive'
 
-Plug 'gko/vim-coloresque'
+Plug 'chrisbra/Colorizer'
 " Ctrl-z tree still history manager
 Plug 'mbbill/undotree'
 

@@ -325,9 +325,9 @@ bindsym $mod+Shift+s exec $i3-wm.program.sleep
 # System Management
 ###############################################################################
 
-## Modify // Settings // <> c ##
-set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center --class=floating_window
-bindsym $mod+c exec $i3-wm.program.settings
+### Modify // Settings // <> c ##
+#set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center --class=floating_window
+#bindsym $mod+c exec $i3-wm.program.settings
 
 ## Modify // Display Settings // <> d ##
 set_from_resource $i3-wm.program.display i3-wm.program.display gnome-control-center --class=floating_window display
@@ -361,7 +361,7 @@ bindsym $mod+period exec /usr/bin/i3-snapshot -c < /tmp/i3-snapshot
 
 # Toggle bar visibility
 ## Modify // Toggle Bar // <> i ##
-bindsym $mod+i bar mode toggle
+# bindsym $mod+i bar mode toggle
 
 # Cause Settings app to float above tiled windows
 floating_maximum_size -1 x -1
@@ -414,6 +414,39 @@ mode "Resize Mode" {
 bindsym $mod+r mode "Resize Mode"
 
 ###############################################################################
+# Cursor movements
+###############################################################################
+
+## Enter Cursor Mode // <> c ##
+mode "Cursor Mode" {
+        # These bindings trigger as soon as you enter the cursor mode
+
+        # Move the cursor slowly
+        bindsym h exec --no-startup-id xdotool mousemove_relative -- -5 0
+        bindsym k exec --no-startup-id xdotool mousemove_relative -- 0 -5
+        bindsym j exec --no-startup-id xdotool mousemove_relative -- 0 5
+        bindsym l exec --no-startup-id xdotool mousemove_relative -- 5 0
+        
+        # Move the cursor quicker
+        bindsym Ctrl+h exec --no-startup-id xdotool mousemove_relative -- -20 0
+        bindsym Ctrl+k exec --no-startup-id xdotool mousemove_relative -- 0 -20
+        bindsym Ctrl+j exec --no-startup-id xdotool mousemove_relative -- 0 20
+        bindsym Ctrl+l exec --no-startup-id xdotool mousemove_relative -- 20 0
+
+        # Left click
+        bindsym space exec --no-startup-id xdotool click 1
+
+        # Right click
+        bindsym Ctrl+space exec --no-startup-id xdotool click 2
+
+        ## Exit Cursor Mode // Escape or Enter ##
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+c mode "default"
+}
+bindsym $mod+c mode "Cursor Mode"
+
+###############################################################################
 # i3 Appearance and Behavior
 ###############################################################################
 
@@ -454,7 +487,8 @@ set_from_resource $focused.color.border i3-wm.client.focused.color.border "#2E34
 set_from_resource $focused.color.background i3-wm.client.focused.color.background "#88C0D0"
 set_from_resource $focused.color.text i3-wm.client.focused.color.text "#fdf6e3"
 set_from_resource $focused.color.indicator i3-wm.client.focused.color.indicator "#268bd2"
-set_from_resource $focused.color.child_border i3-wm.client.focused.color.child_border
+set_from_resource $focused.color.child_border color4
+# set_from_resource $focused.color.child_border i3-wm.client.focused.color.child_border
 
 set_from_resource $focused_inactive.color.border i3-wm.client.focused_inactive.color.border "#2E3440"
 set_from_resource $focused_inactive.color.background i3-wm.client.focused_inactive.color.background "#2E3440"

@@ -720,7 +720,19 @@ tree,
 
 :-moz-any(#content, #appcontent) browser {
   margin-right: 0px !important;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
   margin-bottom: 0px !important;
-  overflow-x: scroll;
+  /*overflow-x: scroll;*/
+}
+
+.tab-label-container[pinned] {
+    width: o;
+}
+
+.tab-content:not([pinned="true"]) {
+    overflow: hidden !important;
+}
+
+.tab-container[pinned] {
+    width: 50px !important;
 }

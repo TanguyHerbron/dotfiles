@@ -122,10 +122,32 @@ export LANG=en_US.UTF-8
 # <<< conda initialize <<<
 #
 
+# Add w3m to the path to allow image preview in the terminal
+export PATH="$PATH:/usr/lib/w3m"
+
+# Custom almond scripts
+export PATH="$PATH:$HOME/.almond/"
+
+# NPM path for global installation
+PATH="$HOME/.node_modules/bin:$PATH"
+export npm_config_prefix=~/.node_modules
+
+# Enable vim controls in the terminal
+set -o vi
+
+bindkey "^?" backward-delete-char
+
+# Enable backward incremental search
+bindkey '^R' history-incremental-search-backward
+
+# Add libvips environment variable for pyvips
+export LD_LIBRARY_PATH=/usr/local/lib/
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 alias socrates="ssh socrates"
 alias almond_droplet="ssh tanguy@almond_droplet -p 22222"
-
-export PATH="$PATH:$HOME/.almond/"
 alias almond=". almond"
 alias lc="docker container ls"
 alias vim="nvim"
@@ -133,27 +155,12 @@ alias vim="nvim"
 alias resource="source ~/.zshrc"
 alias almond-dev="~/.tmux/almond-dev"
 
-# NBFC Fan control shortcut
-alias nbfc="mono /opt/nbfc/nbfc.exe"
-
-# Enable vim controls in the terminal
-set -o vi
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Dotfiles alias for easy dotfile management
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
 
-# Add libvips environment variable for pyvips
-export LD_LIBRARY_PATH=/usr/local/lib/
-
 # Switch between nvidia and intel drivers with one command
 alias driver='optimus-manager --no-confirm --switch'
-
-# Enable backward incremental search
-bindkey '^R' history-incremental-search-backward
 
 # Add an alias to the powerpill wrapper for pacman
 alias pac='sudo pacman -S'
@@ -164,3 +171,11 @@ alias top="ytop -p"
 alias gitg='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 
 alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
+
+alias gitcommiiiiiiiiiiiiiit='cz'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/tanguy/Downloads/tmp/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tanguy/Downloads/tmp/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/tanguy/Downloads/tmp/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tanguy/Downloads/tmp/google-cloud-sdk/completion.zsh.inc'; fi

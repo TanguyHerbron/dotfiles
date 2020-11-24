@@ -41,6 +41,21 @@ Plug 'davidhalter/jedi-vim'
 " LaTeX plugin
 Plug 'lervag/vimtex'
 
+" Dockerfile syntax highlighter
+Plug 'ekalinin/Dockerfile.vim'
+
+" docker-compose wrapper
+Plug 'skanehira/docker-compose.vim'
+
+" Nginx syntax highlighter
+Plug 'chr4/nginx.vim'
+
+" Ayu color scheme
+Plug 'ayu-theme/ayu-vim'
+
+" Nvim in the browser
+Plug 'glacambre/firenvim', {'do': { _ -> firenvim#install(0) }}
+
 call plug#end()
 
 " autocmd vimenter * NERDTree | wincmd w

@@ -10,7 +10,7 @@ Plug 'yggdroot/indentline'
 
 Plug 'Townk/vim-autoclose'
 Plug 'vim-syntastic/syntastic'
-Plug 'maksimr/vim-jsbeautify'
+Plug 'yuezk/vim-js'
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

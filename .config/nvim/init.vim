@@ -150,3 +150,6 @@ set t_Co=256
 set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
+
+" Neomutt configuration for nvim compatibility
+au BufRead /tmp/neomutt-* set tw=72

@@ -179,3 +179,6 @@ if [ -f '/home/tanguy/Downloads/tmp/google-cloud-sdk/path.zsh.inc' ]; then . '/h
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/tanguy/Downloads/tmp/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tanguy/Downloads/tmp/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Update dir_colors according to the specified dotfile
+eval $(dircolors -b .config/dir_colors)

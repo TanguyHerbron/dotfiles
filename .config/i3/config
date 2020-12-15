@@ -91,7 +91,7 @@ set_from_resource $ws10_key i3-wm.workspace.10.key 0
 bindsym $mod+Return exec /usr/bin/alacritty
 
 ## Launch // Browser // <><Shift> Enter ##
-bindsym $mod+Shift+Return exec gtk-launch firefox
+bindsym $mod+Shift+Return exec firefox
 
 set_from_resource $rofiTheme rofi.theme ~/.config/rofi/config.rasi
 

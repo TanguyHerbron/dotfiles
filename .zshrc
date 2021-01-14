@@ -165,8 +165,8 @@ alias driver='optimus-manager --no-confirm --switch'
 # Add an alias to the powerpill wrapper for pacman
 alias pac='sudo pacman -S'
 
-# When opening top, use ytop with CPU core details
-alias top="ytop -p"
+# When opening top, use bottom
+alias top="btm"
 
 alias gitg='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 

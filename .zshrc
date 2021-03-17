@@ -176,6 +176,8 @@ alias gitcommiiiiiiiiiiiiiit='cz'
 
 alias havpn='~/.config/halia-switch.sh'
 
+alias clip='xclip -selection primary'
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/tanguy/Downloads/tmp/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tanguy/Downloads/tmp/google-cloud-sdk/path.zsh.inc'; fi
 

@@ -7,12 +7,12 @@
 ! *.background:   [95]#1f2430
 
 *.foreground:   #D9D7CE
-*.background:   #212733
+*.background:   #0F1419
 *.cursorColor:  #ffcc66
 
 ! Black
 
-*.color0:       #212733
+*.color0:       #1f2430
 *.color8:       #292b30
 
 ! Red

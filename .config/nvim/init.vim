@@ -51,7 +51,7 @@ Plug 'skanehira/docker-compose.vim'
 Plug 'chr4/nginx.vim'
 
 " Ayu color scheme
-Plug 'ayu-theme/ayu-vim'
+Plug 'TanguyHerbron/ayu-vim'
 
 " Nvim in the browser
 Plug 'glacambre/firenvim', {'do': { _ -> firenvim#install(0) }}

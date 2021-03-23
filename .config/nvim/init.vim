@@ -56,6 +56,8 @@ Plug 'TanguyHerbron/ayu-vim'
 " Nvim in the browser
 Plug 'glacambre/firenvim', {'do': { _ -> firenvim#install(0) }}
 
+" Highlight indicator
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
 " autocmd vimenter * NERDTree | wincmd w

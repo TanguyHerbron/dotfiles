@@ -12,8 +12,8 @@
 
 ! Black
 
-*.color0:       #1f2430
-*.color8:       #292b30
+*.color0:       #47515b
+*.color8:       #0F1419
 
 ! Red
 
@@ -49,7 +49,6 @@
 
 *.color7:       #ffffff
 *.color15:      #ffffff
-
 
 ! Bold, Italic, Underline
 

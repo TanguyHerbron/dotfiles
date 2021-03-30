@@ -153,5 +153,15 @@ set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
 
+" Syntastic default configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlage()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " Neomutt configuration for nvim compatibility
 au BufRead /tmp/neomutt-* set tw=72

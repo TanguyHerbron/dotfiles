@@ -58,6 +58,9 @@ Plug 'glacambre/firenvim', {'do': { _ -> firenvim#install(0) }}
 
 " Highlight indicator
 Plug 'machakann/vim-highlightedyank'
+
+" Markdown preview in browser
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 
 " autocmd vimenter * NERDTree | wincmd w

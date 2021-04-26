@@ -1,0 +1,21 @@
+<eww>
+    <definitions>
+        <def name="dd_stats">
+            <box class="main-container dd_stat-container" orientation="v" space-evenly="true">
+                <button>{{dd_usage}}</button>
+            </box>
+        </def>
+    </definitions>
+    <variables>
+        <script-var name="dd_usage" interval="5s">~/.config/eww/scripts/dd_usage.sh</script-var>
+    </variables>
+    <windows>
+        <window name="dd_capacity" stacking="fg" focusable="false" screen="1">
+            <geometry anchor="top right" x="-150px" y="24"/>
+            <reserve side="left" distance="50px"/>
+            <widget>
+                <dd_stats/>
+            </widget>
+        </window>
+    </windows>
+</eww>

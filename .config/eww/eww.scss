@@ -1,0 +1,51 @@
+$foreground: #D9D7CE;
+$background: #0F1419;
+$cursorColor: #ffcc66;
+
+$black: #47515b;
+$dblack: #0F1419;
+
+$red: #ff3333;
+$dred: #ff6666;
+
+$green: #bae67e;
+$dgreen: #cee6ac;
+
+$yellow: #ffd580;
+$dyellow: #ffe6b3;
+
+$blue: #73d0ff;
+$dblue: #a6e1ff;
+
+$magenta: #f28779;
+$dmagenta: #ffd6da;
+
+$cyan: #95e6cb;
+$dcyan: #ffffff;
+
+$white: #ffffff;
+$dwhite: #ffffff;
+
+* {
+    all: unset;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0);
+    color: $white;
+    font-family: Iosevka;
+}
+
+button {
+    all: unset;
+    padding: 10px;
+}
+
+.main-container {
+    background-color: $background;
+}
+
+.dd_stat-container {
+    border: 1px solid $blue;
+}
+

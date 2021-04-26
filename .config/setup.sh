@@ -12,7 +12,7 @@ cd /tmp/yay
 makepkg -si
 
 ## Install AUR packages
-yay -S polybar
+yay -S polybar pulseaudio-control eww-git
 
 ## Install vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

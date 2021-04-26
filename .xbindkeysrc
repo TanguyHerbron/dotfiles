@@ -7,11 +7,11 @@
 
 ## Volume management
 # Increase volume
-"amixer set 'Master' 5%+ && amixer -c 2 set 'PCM' 5%+"
+"pulseaudio-control up"
     XF86AudioRaiseVolume
 
 # Decrease volume
-"amixer set 'Master' 5%- && amixer -c 2 set 'PCM' 5%-"
+"pulseaudio-control down"
     XF86AudioLowerVolume
 
 # Mute volume

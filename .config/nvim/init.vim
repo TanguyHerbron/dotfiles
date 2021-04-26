@@ -61,6 +61,9 @@ Plug 'machakann/vim-highlightedyank'
 
 " Markdown preview in browser
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+" React syntax highlighter
+Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 " autocmd vimenter * NERDTree | wincmd w

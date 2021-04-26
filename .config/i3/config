@@ -330,8 +330,11 @@ bindsym $mod+Shift+s exec $i3-wm.program.sleep
 #bindsym $mod+c exec $i3-wm.program.settings
 
 ## Modify // Display Settings // <> d ##
-set_from_resource $i3-wm.program.display i3-wm.program.display gnome-control-center --class=floating_window display
-bindsym $mod+d exec $i3-wm.program.display
+# set_from_resource $i3-wm.program.display i3-wm.program.display gnome-control-center --class=floating_window display
+# bindsym $mod+d exec $i3-wm.program.display
+
+## Display drive stat window
+bindsym $mod+d exec /home/tanguy/.config/i3/scripts/dd_stats_toggle.sh
 
 ## Modify // Wifi Settings // <> w ##
 set_from_resource $i3-wm.program.wifi i3-wm.program.wifi gnome-control-center --class=floating_window wifi
@@ -611,4 +614,5 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id feh --bg-scale ~/Images/Wallpapers/aerial_waves.jpg
 # exec_always --no-startup-id ~/.config/picom/launch.sh &
 exec_always --no-startup-id xbindkeys --poll-rc
+exec_always --no-startup-id eww daemon &
 exec_always --no-startup-id udiskie &

@@ -171,3 +171,10 @@ let g:syntastic_check_on_wq = 0
 
 " Neomutt configuration for nvim compatibility
 au BufRead /tmp/neomutt-* set tw=72
+
+" Line wrapping shortcuts
+function! ToggleWrap()
+    set wrap! linebreak! nolist!
+endfunction
+
+nnoremap <leader>w :call ToggleWrap()<CR>

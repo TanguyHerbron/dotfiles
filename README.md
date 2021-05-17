@@ -26,6 +26,7 @@ Still have a doubt about what you want from here ? You might want to take a look
 | Browser                     | Firefox                    |
 | Application launcher        | Rofi                       |
 | Bar                         | Polybar                    |
+| Screenshots                 | Flameshot                  |
 | Color scheme                | Ayu                        |
 | Terminals                   | Alacritty & xterm          |
 | Shell                       | Zsh                        |
@@ -34,6 +35,55 @@ Still have a doubt about what you want from here ? You might want to take a look
 ## Gallery
 
 <img src="/Images/Screenshots/desktop.png">
+
+<a id="install"></a>
+## Installation
+
+/!\ To be written
+
+<a id="keybinds"></a>
+## Keybinds
+These are the most used and basic keybinds. You might want to read through `.config/i3/config` to find more keybindings and add your own.
+
+Note: `Mod` is by default set to the window key<br>
+Note: Navigation keys (hjkl) can be substituted by arrow keys
+### Applications
+|           Keybind           |          Function          |
+|-----------------------------|----------------------------|
+| `Mod + Enter`               | Launch terminal (alacritty)|
+| `Mod + Shift + Enter`       | Launch browser (firefox)   |
+| `Mod + Space`               | Launch app launcher (rofi) |
+| `Mod + s`                   | Open screenshot tool (flameshot)|
+| `Mod + a`                   | Close focused window       |
+| `Mod + Shift + c`           | Reload i3 configurations   |
+| `Mod + Ctrl + r`            | Restart i3                 |
+| `Mod + c`                   | Display calendar widget    |
+| `Mod + d`                   | Display drive info widget  |
+
+### Window navigation
+|           Keybind           |          Function          |
+|-----------------------------|----------------------------|
+| `Mod + h`                   | Focus window on the left   |
+| `Mod + j`                   | Focus window above         |
+| `Mod + k`                   | Focus window underneath    |
+| `Mod + l`                   | Focus window on the right  |
+| `Mod + Shift + h`           | Move window to the left    |
+| `Mod + Shift + j`           | Move window above          |
+| `Mod + Shift + k`           | Move window underneath     |
+| `Mod + Shift + l`           | Move window to the right   |
+| `Mod + {1-9}`               | Move to {1-9} workspace    |
+| `Mod + Shift + {1-9}`       | Move selected window(s) to workspace {1-9} |
+
+### Split management
+|           Keybind           |          Function          |
+|-----------------------------|----------------------------|
+| `Mod + v`                   | Split vertically           |
+| `Mod + g`                   | Split horizontally         |
+| `Mod + Backspace`           | Toggle split orientation   |
+| `Mod + t`                   | Cycle between vert,hor and tabbed |
+| `Mod + f`                   | Toggle fullscreen          |
+| `Mod + Shift + f`           | Toggle floating mode       |
+| `Mod + r`                   | Toggle resize mode         |
 
 <a id="faq"></a>
 # Frequently asked questions

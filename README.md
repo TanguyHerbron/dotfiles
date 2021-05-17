@@ -31,6 +31,7 @@ Still have a doubt about what you want from here ? You might want to take a look
 | Shell                       | Zsh                        |
 
 <a id="gallery"></a>
+## Gallery
 
 <img src="/Images/Screenshots/desktop.png">
 

@@ -45,14 +45,32 @@ Still have a doubt about what you want from here ? You might want to take a look
 - [w3m](http://w3m.sourceforge.net/)
 - [bitwarden-cli](https://github.com/bitwarden/cli)
 - [bitwarden-rofi](https://github.com/mattydebie/bitwarden-rofi)
+- [git](https://git-scm.com/)
 
-### Cloning the repository
 
-/!\ To be written
+### Per distro instructions
 
-### Configuration
+#### Arch
+For Arch Linux users, you can simply execute the `.config/setup.sh` script and get going.
 
-/!\ To be written
+#### Other distributions
+I recommend taking a look at the `.config/setup.sh` script and comment out everything special to Arch (`pacman` and `yay` section).
+Then, I advise to install all packages from source if you run into issues, since everything is meant to be used with latest versions (looking at you `neovim`).
+### Dotfiles installation
+- Clone the repository
+```
+git clone --bare https://github.com/TanguyHerbron/dotfiles.git $HOME/.dotfiles
+```
+- Define a one time alias
+```
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+```
+- Checkout the content from the git repository to your `$HOME`
+```
+dotfiles checkout
+```
+
+From this point on, if you have `zsh` installed, the `dotfiles` alias will be added to your shell by default. Otherwise, you might want to add it yourself or instasll `zsh`.
 
 <a id="keybinds"></a>
 ## Keybinds

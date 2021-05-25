@@ -99,6 +99,10 @@ set_from_resource $rofiTheme rofi.theme ~/.config/rofi/config.rasi
 set_from_resource $i3-wm.program.launcher.app i3-wm.program.launcher.app rofi -show drun -theme $rofiTheme
 bindsym $mod+space exec $i3-wm.program.launcher.app
 
+## Launch // Application // <> p ##
+set_from_resource $i3-wm.program.launcher.pwd i3-wm.program.launcher.pwd bwmenu
+bindsym $mod+p exec $i3-wm.program.launcher.pwd
+
 ## Launch // Command // <><Shift> Space ##
 set_from_resource $i3-wm.program.launcher.cmd i3-wm.program.launcher.cmd rofi -show run -theme $rofiTheme
 bindsym $mod+Shift+space exec $i3-wm.program.launcher.cmd
@@ -310,8 +314,8 @@ set_from_resource $i3-wm.program.reboot i3-wm.program.reboot /usr/bin/gnome-sess
 bindsym $mod+Shift+b exec $i3-wm.program.reboot
 
 ## Session // Power Down // <><Shift> p ##
-set_from_resource $i3-wm.program.shutdown i3-wm.program.shutdown /usr/bin/gnome-session-quit --power-off
-bindsym $mod+Shift+p exec $i3-wm.program.shutdown
+#set_from_resource $i3-wm.program.shutdown i3-wm.program.shutdown /usr/bin/gnome-session-quit --power-off
+#bindsym $mod+Shift+p exec $i3-wm.program.shutdown
 
 ## Session // Lock Screen // <> Escape ##
 set_from_resource $i3-wm.program.lock i3-wm.program.lock dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock

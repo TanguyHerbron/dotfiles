@@ -3,15 +3,19 @@
 ###################### Specific to Arch based distributions ######################
 ## Install needed packages
 # WM : bspwm sxhkd xorg-xinit xorg-server xorg-randr xterm alacritty
-# Cosmetic : feh
+# Cosmetic : feh w3m
 # Fonts : nerd-fonts-meslo
 # Dev env : git tmux
 # Yay dep : base-devel
+# CLI bitwarden integration : bitwarden-cli jq fzf
+# Rofi bitwarden integration : bitwarden-cli bitwarden-rofi
 sudo pacman -S bspwm sxhkd xorg-xinit xorg-server xorg-xrandr xterm alacritty \
-    feh \
+    feh w3m \
     nerd-fonts-meslo \
     git tmux \
-    base-devel 
+    base-devel \
+    bitwarden-cli jq fzf  \
+    bitwarden-rofi
 
 ## Install yay
 git clone https://aur.archlinux.org/yay.git /tmp/yay

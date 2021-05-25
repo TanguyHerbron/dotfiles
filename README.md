@@ -38,6 +38,19 @@ Still have a doubt about what you want from here ? You might want to take a look
 
 <a id="install"></a>
 ## Installation
+### Requirements
+
+- [jq](https://stedolan.github.io/jq/)
+- [fzf](https://github.com/junegunn/fzf)
+- [w3m](http://w3m.sourceforge.net/)
+- [bitwarden-cli](https://github.com/bitwarden/cli)
+- [bitwarden-rofi](https://github.com/mattydebie/bitwarden-rofi)
+
+### Cloning the repository
+
+/!\ To be written
+
+### Configuration
 
 /!\ To be written
 
@@ -59,6 +72,7 @@ Note: Navigation keys (hjkl) can be substituted by arrow keys
 | `Mod + Ctrl + r`            | Restart i3                 |
 | `Mod + c`                   | Display calendar widget    |
 | `Mod + d`                   | Display drive info widget  |
+| `Mod + p`                   | Open bitwarden-rofi        |
 
 ### Window navigation
 |           Keybind           |          Function          |

@@ -620,3 +620,5 @@ exec_always --no-startup-id feh --bg-scale ~/Images/Wallpapers/aerial_waves.jpg
 exec_always --no-startup-id xbindkeys --poll-rc
 exec_always --no-startup-id eww daemon &
 exec_always --no-startup-id udiskie &
+
+exec --no-startup-id /home/tanguy/multihead.sh

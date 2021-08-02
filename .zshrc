@@ -88,6 +88,9 @@ dotfiles config --local status.showUntrackedFiles no
 # Switch between nvidia and intel drivers with one command
 alias driver='optimus-manager --no-confirm --switch'
 
+# Enable nvidia drivers and trigger the default multi-head configuration
+alias multihead='touch /tmp/multihead && driver nvidia'
+
 # Add an alias to the powerpill wrapper for pacman
 alias pac='sudo pacman -S'
 
